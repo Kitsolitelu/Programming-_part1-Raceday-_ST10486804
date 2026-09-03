@@ -20,3 +20,4 @@ Add event endpoints to plan
 | GET | /api/events/{id}/results | Lists the captured results for an event. | None | None | 200 OK – list of results |
 --Add category and enrolment endpoints to plan
 | POST | /api/enrolments/{id}/results | Captures a result for one enrolment. | Organiser | { finishTime, position } | 201 Created – new result id
+--Add results endpoints to plan
