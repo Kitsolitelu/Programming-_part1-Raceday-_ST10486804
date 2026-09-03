@@ -15,7 +15,7 @@ CREATE TABLE Users (
     CreatedAt DATETIME NOT NULL DEFAULT GETDATE()
 );
  
---Create the user Event table
+--Create the events table
 CREATE TABLE Events (
     EventId INT IDENTITY(1,1) PRIMARY KEY,
     OrganiserId INT NOT NULL,
@@ -26,7 +26,7 @@ CREATE TABLE Events (
     CreatedAt DATETIME NOT NULL DEFAULT GETDATE(),
     FOREIGN KEY (OrganiserId) REFERENCES Users(UserId)
 );
-
+--creating the RouteInfo table 
 CREATE TABLE RouteInfo (
     RouteId INT IDENTITY(1,1) PRIMARY KEY,
     EventId INT NOT NULL UNIQUE,
@@ -36,7 +36,7 @@ CREATE TABLE RouteInfo (
     FOREIGN KEY (EventId) REFERENCES Events(EventId)
 );
  
-
+--Create the categories able
 CREATE TABLE Categories (
     CategoryId INT IDENTITY(1,1) PRIMARY KEY,
     EventId INT NOT NULL,
@@ -46,7 +46,7 @@ CREATE TABLE Categories (
     FOREIGN KEY (EventId) REFERENCES Events(EventId)
 );
  
-
+--Create the enrolment table
 CREATE TABLE Enrolments (
     EnrolmentId INT IDENTITY(1,1) PRIMARY KEY,
     CategoryId INT NOT NULL,
@@ -58,7 +58,7 @@ CREATE TABLE Enrolments (
     CONSTRAINT UQ_Enrolment UNIQUE (CategoryId, ParticipantId) 
 );
  
-
+--Create the Result table
 CREATE TABLE Results (
     ResultId INT IDENTITY(1,1) PRIMARY KEY,
     EnrolmentId INT NOT NULL UNIQUE,
