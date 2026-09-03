@@ -7,6 +7,7 @@
 | POST | /api/auth/login | Logs a user in and returns an auth token. | None | { email, password } | 200 OK – token / 401 Unauthorized – wrong credentials |
 | GET | /api/users/me | Returns the logged-in user's own profile. | Any (logged in) | None | 200 OK – user details |
 | PUT | /api/users/me | Updates the logged-in user's own profile. | Any (logged in) | { fullName, email } | 200 OK – updated user / 400 Bad Request |
+Add event endpoints to plan
 | GET | /api/events | Lists all upcoming events. | None | None | 200 OK – list of events |
 | GET | /api/events/{id} | Returns the details of one event. | None | None | 200 OK – event / 404 Not Found |
 | POST | /api/events | Creates a new event. | Organiser | { name, description, eventDate, location } | 201 Created – new event id |
