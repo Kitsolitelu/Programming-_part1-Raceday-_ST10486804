@@ -15,7 +15,7 @@ CREATE TABLE Users (
     CreatedAt DATETIME NOT NULL DEFAULT GETDATE()
 );
  
-
+--Create the user Event table
 CREATE TABLE Events (
     EventId INT IDENTITY(1,1) PRIMARY KEY,
     OrganiserId INT NOT NULL,
