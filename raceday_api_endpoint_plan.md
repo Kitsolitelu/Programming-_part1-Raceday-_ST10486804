@@ -2,6 +2,7 @@
 
 | HTTP Method | Route | Description | Role Required | Request Body | Expected Response |
 |---|---|---|---|---|---|
+--Add auth and profile endpoints to plan
 | POST | /api/auth/register | Creates a new user account as either an Organiser or a Participant. | None | { fullName, email, password, role } | 201 Created – new user id / 400 Bad Request – invalid or duplicate email |
 | POST | /api/auth/login | Logs a user in and returns an auth token. | None | { email, password } | 200 OK – token / 401 Unauthorized – wrong credentials |
 | GET | /api/users/me | Returns the logged-in user's own profile. | Any (logged in) | None | 200 OK – user details |
