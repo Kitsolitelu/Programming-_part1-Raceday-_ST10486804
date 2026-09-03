@@ -18,7 +18,7 @@ Database (Part 1)
 --Enrolments, Results. 
 Users is shared between Organisers and Participants There's a Role column .
 
-
+--Add database setup instructions to README
 How to run the script:
 --Open SSMS and connect to SQL Server.
 --Open a new query window.
