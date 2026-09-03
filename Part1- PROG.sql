@@ -86,6 +86,7 @@ INSERT INTO RouteInfo (EventId, Distance, ElevationGainM, RouteDescript) VALUES
 (2, 15.0, 40, 'mountains and natre around Mabopane '),
 (3, 250, 800, 'City viewsand  mountain route around the City of Gold');
 
+--Add sample Categories data
 INSERT INTO Categories (EventId, Name, Price, MaxParticipants) VALUES
 (1, '22km', 350.00, 5000),
 (1, '15km', 250.00, 3000),
