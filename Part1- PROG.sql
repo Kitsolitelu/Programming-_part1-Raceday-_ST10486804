@@ -73,7 +73,8 @@ INSERT INTO Users (FullName, Email, PasswordHash, Role) VALUES
 ('Lindiwe Nygewa', 'lindiweN@raceday.co.za', 'hashed_password_2', 'Organiser'),
 ('Loreen Van Zyl', 'LoreenVZ@raceday.co.za', 'hashed_password_3', 'Participant'),
 ('Katherine Fick', 'KAT32@raceday.co.za', 'hashed_password_4', 'Participant');
- 
+
+--Added values into the user table
 INSERT INTO Events (OrganiserId, Name, Description, EventDate, Location) VALUES
 (1, 'Hazeldean Marathon', 'Annual road marathon at Hzaeldean', '2026-11-08', 'Pretoria East, Pretoria'),
 (1, 'Mabopane fun Run', 'Community 5km fun run', '2026-09-20', 'Mabopane, Pretoria'),
