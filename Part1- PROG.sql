@@ -92,7 +92,7 @@ INSERT INTO Categories (EventId, Name, Price, MaxParticipants) VALUES
 (2, '35km', 50.00, 500),
 (3, '25km', 600.00, 10000);
  
-
+--Add sample Enrolments data
 INSERT INTO Enrolments (CategoryId, ParticipantId, Status) VALUES
 (1, 3, 'Confirmed'),
 (2, 4, 'Pending'),
