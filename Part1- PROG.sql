@@ -11,8 +11,8 @@ CREATE TABLE Users (
     FullName NVARCHAR(100) NOT NULL,
     Email NVARCHAR(150) NOT NULL UNIQUE,
     PasswordHash NVARCHAR(255) NOT NULL,
-    Role NVARCHAR(20) NOT NULL DEFAULT 'Participant', -- 'Organiser' or 'Participant'
-    CreatedAt DATETIME NOT NULL DEFAULT GETDATE()
+    Role NVARCHAR(20) NOT NULL DEFAULT 'Participant', 
+    CreatedAt DATETIME NOT NULL DEFAULT GETDATE() -- Added the GETDATE function to display today's date
 );
  
 --Create the events table
