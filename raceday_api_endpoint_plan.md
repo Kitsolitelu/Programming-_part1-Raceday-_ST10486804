@@ -18,4 +18,5 @@ Add event endpoints to plan
 | POST | /api/categories/{id}/enrol | Enrols the logged-in participant into a category. | Participant | None | 201 Created / 409 Conflict – already enrolled |
 | GET | /api/users/me/enrolments | Lists the logged-in participant's own enrolments. | Participant | None | 200 OK – list of enrolments |
 | GET | /api/events/{id}/results | Lists the captured results for an event. | None | None | 200 OK – list of results |
+--Add category and enrolment endpoints to plan
 | POST | /api/enrolments/{id}/results | Captures a result for one enrolment. | Organiser | { finishTime, position } | 201 Created – new result id
