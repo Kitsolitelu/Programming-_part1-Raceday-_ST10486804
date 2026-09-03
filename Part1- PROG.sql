@@ -67,7 +67,7 @@ CREATE TABLE Results (
     FOREIGN KEY (EnrolmentId) REFERENCES Enrolments(EnrolmentId)
 );
  
-
+--Added values into the user table
 INSERT INTO Users (FullName, Email, PasswordHash, Role) VALUES
 ('Thato Sibiya', 'ThatoS@raceday.co.za', 'hashed_password_1', 'Organiser'),
 ('Lindiwe Nygewa', 'lindiweN@raceday.co.za', 'hashed_password_2', 'Organiser'),
