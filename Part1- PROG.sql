@@ -98,7 +98,7 @@ INSERT INTO Enrolments (CategoryId, ParticipantId, Status) VALUES
 (2, 4, 'Pending'),
 (3, 3, 'Confirmed');
  
-
+--Populated the Results table
 INSERT INTO Results (EnrolmentId, FinishTime, Position) VALUES
 (1, '03:00:22', 812),
 (2, '02:31:10', 340);
