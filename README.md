@@ -25,3 +25,7 @@ How to run the script:
 --Open docs/raceday_schema.sql and run it.
 --It creates a database called RaceDayDB, makes all the tables, and inserts some sample data (2 organisers, 2 participants, 3 events, categories, enrolments and results).
 --To run SELECT * FROM Users; to see the sample data.
+
+ Link to the youtube video 
+ the youtube video explains in detailed what project 1 contains , running script and explaination of the ERD image
+ https://youtu.be/RIV2CvXNCyM
